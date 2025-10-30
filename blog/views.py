@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import Http404
 
-# "студенческий" список постов — можно расширять
 posts = [
     {
         'id': 0,
@@ -25,7 +24,7 @@ posts = [
         ),
         'title': 'Утро на острове'
     },
-    # можно добавить ещё постов
+
     {
         'id': 2,
         'location': 'Порт Неверленд',
