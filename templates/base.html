@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Blogicum{% endblock %}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <header>
+    <h1><a href="{% url 'blog:index' %}">Blogicum</a></h1>
+    <nav>
+      <a href="{% url 'pages:about' %}">О проекте</a> |
+      <a href="{% url 'pages:rules' %}">Правила</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <hr>
+    <small>Учебный проект — Sprint 1</small>
+  </footer>
+</body>
+</html>

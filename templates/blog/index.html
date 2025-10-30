@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Главная — Blogicum{% endblock %}
+{% block content %}
+<h2>Список публикаций</h2>
+<ul>
+  {% for p in posts %}
+    <li>
+      <h3><a href="{% url 'blog:post_detail' p.id %}">{{ p.title }}</a></h3>
+      <div><strong>Место:</strong> {{ p.location }} — <strong>Дата:</strong> {{ p.date }}</div>
+      <div><em>Категория:</em> <a href="{% url 'blog:category_posts' p.category %}">{{ p.category }}</a></div>
+      <p>{{ p.text|truncatechars:150 }}</p>
+    </li>
+  {% empty %}
+    <li>Публикаций пока нет.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

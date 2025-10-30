@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ post.title }} — Blogicum{% endblock %}
+{% block content %}
+<article>
+  <h2>{{ post.title }}</h2>
+  <div><strong>Место:</strong> {{ post.location }} — <strong>Дата:</strong> {{ post.date }}</div>
+  <div><em>Категория:</em> {{ post.category }}</div>
+  <p style="white-space: pre-line;">{{ post.text }}</p>
+  <p><a href="{% url 'blog:index' %}">← Назад к списку</a></p>
+</article>
+{% endblock %}

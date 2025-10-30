@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Публикации в категории {{ category_slug }}{% endblock %}
+{% block content %}
+<h2>Публикации в категории "{{ category_slug }}"</h2>
+
+{% if posts %}
+  <ul>
+    {% for p in posts %}
+      <li><a href="{% url 'blog:post_detail' p.id %}">{{ p.title }}</a> — {{ p.date }}</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Публикаций в этой категории нет.</p>
+{% endif %}
+{% endblock %}
