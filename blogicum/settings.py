@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Безопасность
 SECRET_KEY = 'django-insecure-test-key-for-student-project'
 DEBUG = True
-ALLOWED_HOSTS = list[]
+ALLOWED_HOSTS = []
 
 # Приложения проекта
 INSTALLED_APPS = [
