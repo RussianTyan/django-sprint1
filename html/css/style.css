@@ -1,105 +1,85 @@
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  line-height: 1.4;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 40px;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2rem;
+  margin: 0;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #283593;
+  font-weight: bold;
 }
 
 nav {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 nav a {
+  color: #1e88e5;
   text-decoration: none;
-  color: #007acc;
   margin-right: 12px;
+  font-weight: 500;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 20px 0;
-}
-
 main {
-  margin-top: 18px;
+  padding: 30px 40px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 h2 {
-  color: #444;
-  margin-bottom: 12px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 18px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #eaeaea;
-}
-
-ul li:last-child {
-  border-bottom: none;
-}
-
-ul li h3 {
-  margin: 0 0 4px 0;
-  font-size: 1.4rem;
-}
-
-ul li h3 a {
-  color: #007acc;
-}
-
-ul li h3 a:hover {
-  text-decoration: underline;
-}
-
-ul li div {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-p {
-  margin: 10px 0;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
 
 article {
-  background-color: #fff;
-  padding: 18px;
-  border: 1px solid #eaeaea;
-  border-radius: 4px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
 }
 
-article h2 {
-  margin-top: 0;
+article h2 a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+
+article h2 a:hover {
+  text-decoration: underline;
+}
+
+article p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+article small {
+  color: #666;
+  font-style: italic;
 }
 
 footer {
-  margin-top: 30px;
-  color: #666;
-  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
   text-align: center;
-}
-
-@media (max-width: 600px) {
-  body {
-    margin: 10px;
-  }
-  header h1 {
-    font-size: 1.6rem;
-  }
+  padding: 20px;
+  color: #888;
+  background-color: #fff;
+  margin-top: 40px;
 }
