@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
@@ -12,7 +11,8 @@ def main():
     except ImportError as exc:
         raise ImportError(
             "Не удалось импортировать Django. "
-            "Убедитесь, что Django установлена и активировано виртуальное окружение."
+            "Убедитесь, что Django установлена и "
+            "активировано виртуальное окружение."
         ) from exc
     execute_from_command_line(sys.argv)
 

@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 # Путь до корневой директории проекта
@@ -7,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Безопасность
 SECRET_KEY = 'django-insecure-test-key-for-student-project'
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS: list[str] = []
 
 # Приложения проекта
 INSTALLED_APPS = [
@@ -89,4 +88,3 @@ STATICFILES_DIRS = [
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
